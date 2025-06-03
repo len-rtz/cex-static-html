@@ -3,6 +3,8 @@ This repository supports a coding experiment designed to evaluate **developer ex
 
 Two participants will implement the same use case — a sports club website built on a shared ontology over five sessions with a combined time limit of 20 hours each. All coding activities, reflections, and metrics are tracked through a structured developer diary and NASA-TLX surveys.
 
+This project is done in the context of the masters course Coding Excellence (CEX) at TH Köln during summer semester 2025: [archi-lab.io](https://www.archi-lab.io)
+
 ## Experiment Structure and Guidelines
 ### Tasks and Scoring
 
@@ -46,9 +48,9 @@ For each coding session, participants must complete a **developer diary template
   /11ty          # NASA-TLX surveys for 11ty participant
 
 /ontology        # Shared ontology definitions
-`
+```
 
-# Ontology Setup / Sports Club Website
+## Ontology Setup / Sports Club Website
 Participants build a website based on a common ontology defining entities such as:
 
 - SportsClub
