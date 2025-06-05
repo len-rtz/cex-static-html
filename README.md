@@ -40,14 +40,15 @@ For each coding session, participants must complete a **developer diary template
   /11ty          # 11ty-specific website implementation
 
 /diaries
-  /hugo          # Developer diaries for Hugo sessions
-  /11ty          # Developer diaries for 11ty sessions
+  /hugo-diary.xlsx          # Developer diary for Hugo sessions
+  /11ty-dairy.xlsx          # Developer diary for 11ty sessions
 
 /surveys
   /hugo          # NASA-TLX surveys for Hugo participant
   /11ty          # NASA-TLX surveys for 11ty participant
 
-/ontology        # Shared ontology definitions
+/ontology        # Shared ontology definition
+/tasks           # Session Tasks for Coding Experiment
 ```
 
 ## Ontology Setup / Sports Club Website
