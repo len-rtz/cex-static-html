@@ -48,6 +48,6 @@
 
 - Implement navigation
 - Style one team and one news page for visual polish
-- Deploy to GitHub Pages
+- Deploy, e.g. to GitHub Pages
 
 **Diary Focus:** Deployment ease, final polish effort, usability concerns.
