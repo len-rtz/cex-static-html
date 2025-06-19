@@ -21,7 +21,11 @@ This project is done in the context of the masters course Coding Excellence (CEX
 
 For each coding session, participants must complete a **developer diary template** covering:
 
-....
+- Session Data: ID, date, duration, tasks, and completion ratings
+- Tools & Resources: IDEs, AI assistants, documentation consulted
+- Time Breakdown: Minutes spent on templating vs. data integration
+- Challenges: Build issues, blocking problems, help-seeking behavior
+- Outcomes: Goal achievement and confidence in repeating tasks
 
 ### Time and Session Management
 
@@ -40,8 +44,8 @@ For each coding session, participants must complete a **developer diary template
   /11ty          # 11ty-specific website implementation
 
 /diaries
-  /hugo-diary.xlsx          # Developer diary for Hugo sessions
-  /11ty-dairy.xlsx          # Developer diary for 11ty sessions
+  /CEX_diary_hugo.xlsx          # Developer diary for Hugo sessions
+  /CEX_diary_11ty.xlsx          # Developer diary for 11ty sessions
 
 /surveys
   /hugo          # NASA-TLX surveys for Hugo participant
