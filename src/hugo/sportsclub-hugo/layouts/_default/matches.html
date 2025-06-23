@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>Matches</h1>
+<ul>
+  {{ range .Site.Data.matches }}
+    <li>
+      <strong>{{ .title }}</strong><br>
+      {{ .date }} - {{ .team_a }} vs {{ .team_b }}<br>
+      Location: {{ .location }}<br>
+      Score: {{ .score }}
+    </li>
+    <hr>
+  {{ end }}
+</ul>
+{{ end }}

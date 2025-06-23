@@ -1,0 +1,18 @@
+- id: tigers
+  name: Tigers
+  type: adults
+  category: Open
+  coach:
+    id: c1
+    name: Alex Coach
+    role: coach
+    email: coach@club.com
+  players:
+    - id: p1
+      name: John Doe
+      role: player
+      email: john@club.com
+    - id: p2
+      name: Jane Roe
+      role: player
+      email: jane@club.com

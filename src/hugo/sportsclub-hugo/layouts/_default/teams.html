@@ -1,0 +1,14 @@
+{{ define "main" }}
+<h1>Teams</h1>
+{{ range .Site.Data.teams }}
+  <h2>{{ .name }} ({{ .category }})</h2>
+  <p>Coach: {{ .coach.name }}</p>
+  <h4>Players:</h4>
+  <ul>
+    {{ range .players }}
+      <li>{{ .name }} - {{ .role }}</li>
+    {{ end }}
+  </ul>
+  <hr>
+{{ end }}
+{{ end }}
