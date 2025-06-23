@@ -113,6 +113,6 @@ This phase focused on setting up the Hugo-based static site and rendering dynami
     - `contact.html`
   - Used Hugo's Go Template syntax for loops, data access, and page structure
 
-### 📂 Folder Snapshot
+
 
 
