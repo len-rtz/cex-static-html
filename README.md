@@ -5,9 +5,6 @@ Two participants will implement the same use case — a sports club website buil
 
 This project is done in the context of the masters course Coding Excellence (CEX) at TH Köln during summer semester 2025: [archi-lab.io](https://www.archi-lab.io)
 
-
-
-
 ## Experiment Structure and Guidelines
 ### Tasks and Scoring
 
