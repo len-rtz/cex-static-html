@@ -42,6 +42,15 @@ This phase focused on setting up the Hugo-based static site and rendering dynami
     - `contact.html`
   - Used Hugo's Go Template syntax for loops, data access, and page structure
 
+## Phase 2: Data Modeling and Rendering
+
+In this phase, we focused on connecting the static site generator (Hugo) to ontology-based structured data. YAML files representing teams and training sessions were created and integrated into the project. Using Hugo's templating system, we developed:
+
+- A dynamic `/teams/` page that lists all teams with their players and coaches.
+- Individual team detail pages (e.g., `/teams/tigers/`) that pull content from `teams.yaml` based on team ID.
+- Display of training sessions filtered per team using relational data from `trainingSessions.yaml`.
+
+This phase emphasized templating logic (`range`, `index`, `where`, `eq`) and data integration through Hugo’s `.Site.Data` structure. Special attention was paid to managing entity relationships and debugging template conditions to ensure clean rendering. This completes the ontology-to-template integration milestone.
 
 
 
