@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ range site.Data.tournaments }}
+    <div style="margin-bottom: 2rem;">
+      <h2>{{ .name }}</h2>
+      <p><strong>Date:</strong> {{ .date }}</p>
+      <p><strong>Location:</strong> {{ .location }}</p>
+      <p>{{ .description }}</p>
+
+      <h4>Participating Teams:</h4>
+      <ul>
+        {{ range .teams }}
+          {{ $team := index (where site.Data.teams "id" .) 0 }}
+          <li>{{ $team.name }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  {{ end }}
+
+{{ end }}
+

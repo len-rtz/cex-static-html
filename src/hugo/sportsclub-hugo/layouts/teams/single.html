@@ -1,0 +1,33 @@
+{{ define "main" }}
+  {{ $teamID := .Params.id }}
+  {{ $team := index (where site.Data.teams "id" $teamID) 0 }}
+
+  {{ if $team }}
+    <h1>{{ .Title }}</h1>
+    <p>Category: {{ $team.category }}</p>
+    <p>Coach: {{ $team.coach.name }}</p>
+
+    <h3>Players</h3>
+    <ul>
+      {{ range $team.players }}
+        <li>{{ .name }} - {{ .role }}</li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <p><strong>Error:</strong> No team found for ID '{{ $teamID }}'</p>
+  {{ end }}
+    <h3>Training Sessions</h3>
+    <ul>
+        {{ range site.Data.trainingSessions }}
+        {{ if eq .team $teamID }}
+         <li>
+             {{ .date }} – {{ .startTime }} to {{ .endTime }}<br>
+              Location: {{ .location }}<br>
+               Notes: {{ .notes }}
+        </li>
+        {{ end }}
+  {{ end }}
+</ul>
+{{ end }}
+
+
