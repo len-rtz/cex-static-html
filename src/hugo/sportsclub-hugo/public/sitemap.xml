@@ -10,10 +10,14 @@
   </url><url>
     <loc>http://localhost:1313/matches/</loc>
   </url><url>
+    <loc>http://localhost:1313/memberships/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/teams/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tournaments/</loc>
   </url>
 </urlset>

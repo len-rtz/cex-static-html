@@ -1,22 +1,30 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <main class="pa4 mw7 center">
+    <h1 class="f2 lh-title">Upcoming Tournaments</h1>
 
-  {{ range site.Data.tournaments }}
-    <div style="margin-bottom: 2rem;">
-      <h2>{{ .name }}</h2>
-      <p><strong>Date:</strong> {{ .date }}</p>
-      <p><strong>Location:</strong> {{ .location }}</p>
-      <p>{{ .description }}</p>
+    {{ range sort site.Data.tournaments "date" }}
+      <article class="bg-white ba b--black-10 pa3 mb4 shadow-1 br2">
+        <h3 class="f3">{{ .name }}</h3>
+        <p><strong>Date:</strong> {{ .date | time.Format "January 2, 2006" }}</p>
+        <p><strong>Location:</strong> {{ .location }}</p>
+        <p><strong>Description:</strong> {{ .description }}</p>
 
-      <h4>Participating Teams:</h4>
-      <ul>
-        {{ range .teams }}
-          {{ $team := index (where site.Data.teams "id" .) 0 }}
-          <li>{{ $team.name }}</li>
-        {{ end }}
-      </ul>
-    </div>
+        <p><strong>Participating Teams:</strong></p>
+<ul class="ml3">
+  {{ range .teams }}
+    {{ $team := first 1 (where site.Data.teams "id" .) }}
+{{ $team := index $team 0 }}
+
+    {{ if $team }}
+      <li>
+        <a class="link dim blue" href="/teams/{{ . }}/">{{ $team.name }}</a>
+      </li>
+    {{ else }}
+      <li><em>Unknown team ID: {{ . }}</em></li>
+    {{ end }}
   {{ end }}
+</ul>
 
+    {{ end }}
+  </main>
 {{ end }}
-
