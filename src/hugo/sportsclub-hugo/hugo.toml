@@ -1,4 +1,4 @@
-baseURL = "https://kishank11.github.io/cex-static-html/src/hugo/sportsclub-hugo"
+baseURL = "https://kishank11.github.io/cex-static-html/"
 languageCode = "en-us"
 title = "My Sports Club"
 theme = "ananke"
