@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <h1>Club News</h1>
+  {{ range sort .Pages "Date" "desc" }}
+    <article class="mb4">
+      <h3><a class="link dim blue" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>
+        {{ with .Date }}{{ .Format "Jan 2, 2006" }}{{ else }}No date{{ end }}
+        {{ with .Params.author }} — {{ . }}{{ end }}
+      </p>
+      {{ with .Params.summary }}
+        <p>{{ . }}</p>
+      {{ else }}
+        <p>{{ .Plain | truncate 150 }}</p>
+      {{ end }}
+    </article>
+  {{ end }}
+{{ end }}
