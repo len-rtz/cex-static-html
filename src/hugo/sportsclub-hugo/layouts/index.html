@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="pa3 pa5-ns">
+  <h2>Latest News</h2>
+  {{ range first 3 (where site.RegularPages "Section" "news") }}
+    <article class="mb4">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Date.Format "Jan 2, 2006" }} — {{ .Params.author }}</p>
+      <p>{{ .Summary }}</p>
+    </article>
+  {{ end }}
+
+  <div class="mt4">
+    <a href="/memberships/" class="ba ph3 pv2 dib bg-dark-blue white no-underline">
+      Join the Club
+    </a>
+  </div>
+</section>
+{{ end }}

@@ -16,3 +16,18 @@
       name: Jane Roe
       role: player
       email: jane@club.com
+      
+- id: lions
+  name: Lions
+  type: adults
+  category: Open
+  coach:
+    id: c2
+    name: Chris Trainer
+    role: coach
+    email: chris@club.com
+  players:
+    - id: p3
+      name: Max Strong
+      role: player
+      email: max@club.com

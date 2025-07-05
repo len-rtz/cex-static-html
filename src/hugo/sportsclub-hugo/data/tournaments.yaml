@@ -1,0 +1,16 @@
+- id: t1
+  name: Summer Cup
+  date: 2025-07-15
+  location: Stadium A
+  description: Annual club tournament
+  teams:
+    - tigers
+    - lions
+
+- id: t2
+  name: Winter League
+  date: 2025-12-01
+  location: Indoor Arena
+  description: Friendly winter matches
+  teams:
+    - tigers

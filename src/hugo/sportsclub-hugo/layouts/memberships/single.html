@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="center mw6 bg-white br3 pa4 shadow-1">
+    <h1 class="f3 mb4">{{ .Title }}</h1>
+    <form>
+      <div class="mb3">
+        <label for="name" class="db fw6 mb1">Name:</label>
+        <input type="text" id="name" name="name" class="input-reset ba b--black-20 pa2 w-100">
+      </div>
+
+      <div class="mb3">
+        <label for="dob" class="db fw6 mb1">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" class="input-reset ba b--black-20 pa2 w-100">
+      </div>
+
+      <div class="mb3">
+        <label for="email" class="db fw6 mb1">Email:</label>
+        <input type="email" id="email" name="email" class="input-reset ba b--black-20 pa2 w-100">
+      </div>
+
+      <div class="mb3">
+        <label for="motivation" class="db fw6 mb1">Why do you want to join?</label>
+        <textarea id="motivation" name="motivation" rows="4" class="input-reset ba b--black-20 pa2 w-100"></textarea>
+      </div>
+
+      <input type="submit" value="Submit" class="bg-dark-blue white pv2 ph3 bn br2 pointer">
+    </form>
+  </section>
+{{ end }}
