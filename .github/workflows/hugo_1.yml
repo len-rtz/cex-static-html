@@ -51,7 +51,7 @@ jobs:
             
       - name: Check if public folder exists
         run: |
-         ls -l public || echo " Public folder not created"
+         ls  -al
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
