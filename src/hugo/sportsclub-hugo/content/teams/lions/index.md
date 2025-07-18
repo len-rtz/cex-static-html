@@ -1,4 +1,4 @@
 ---
-title: "Teams"
+title: "Lions"
 id: "lions"
 ---

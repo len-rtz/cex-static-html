@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/cex-static-html/news/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/news/match-report/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/news/training-update/</loc>
+    <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/contacts/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/matches/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/memberships/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/teams/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/teams/lions/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/teams/tigers/</loc>
+  </url><url>
+    <loc>http://localhost:1313/cex-static-html/tournaments/</loc>
+  </url>
+</urlset>
