@@ -1,5 +1,5 @@
 ---
 title: "Tigers"
 id: "tigers"
-layout: "team"
+layout: "teams"
 ---

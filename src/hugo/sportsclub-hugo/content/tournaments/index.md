@@ -1,4 +1,3 @@
 ---
 title: "Tournaments"
-layout: "tournaments"
 ---
