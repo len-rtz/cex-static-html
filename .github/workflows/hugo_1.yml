@@ -48,6 +48,10 @@ jobs:
             --destination public \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+            
+      - name: Check if public folder exists
+        run: |
+         ls -l public || echo " Public folder not created"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
