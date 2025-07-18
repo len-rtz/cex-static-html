@@ -19,9 +19,15 @@ jobs:
           hugo-version: '0.148.1'
           extended: true
 
-      - name: Build Hugo Site
-        run: hugo --destination ../../public
-        working-directory: ./src/hugo/sportsclub-hugo
+      - name: Build with Hug
+        run: |
+         hugo \
+         --gc \
+         --minify \
+         --source src/hugo/sportsclub-hugo \
+         --destination public \
+         --baseURL "${{ steps.pages.outputs.base_url }}/" \
+         --cacheDir "${{ runner.temp }}/hugo_cache"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
