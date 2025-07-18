@@ -44,7 +44,7 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           hugo \
-            --source src/hugo/sportsclub-hugo \
+            --source ./src/hugo/sportsclub-hugo \
             --destination public \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
