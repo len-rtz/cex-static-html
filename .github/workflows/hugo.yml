@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Hugo
@@ -19,8 +19,9 @@ jobs:
           hugo-version: '0.148.1'
           extended: true
 
-      - name: Build site
-        run: hugo --minify --source src/hugo/sportsclub-hugo --destination public
+      - name: Build Hugo Site
+        run: hugo --destination ../../public
+        working-directory: ./src/hugo/sportsclub-hugo
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
