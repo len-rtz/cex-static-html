@@ -1,0 +1,33 @@
+[module.hugoVersion]
+min = "0.128.0"
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Teams"
+  url = "/teams/"
+  weight = 2
+
+  [[menu.main]]
+  name = "News"
+  url = "/news/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Tournaments"
+  url = "/tournaments/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Contact"
+  url = "/contacts/"
+  weight = 5
+
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 6
