@@ -1,4 +1,4 @@
 ---
 title: "Membership Application"
-layout: "memberships"
+layout: "membership"
 ---
