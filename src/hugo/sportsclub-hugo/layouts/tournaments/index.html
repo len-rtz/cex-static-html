@@ -10,21 +10,19 @@
         <p><strong>Description:</strong> {{ .description }}</p>
 
         <p><strong>Participating Teams:</strong></p>
-<ul class="ml3">
-  {{ range .teams }}
-    {{ $team := first 1 (where site.Data.teams "id" .) }}
-{{ $team := index $team 0 }}
-
-    {{ if $team }}
-      <li>
-        <a class="link dim blue" href="/cex-static-html/teams/{{ . }}/">{{ $team.name }}</a>
-      </li>
-    {{ else }}
-      <li><em>Unknown team ID: {{ . }}</em></li>
-    {{ end }}
-  {{ end }}
-</ul>
-
+        <ul class="ml3">
+          {{ range .teams }}
+            {{ $team := index (where site.Data.teams "id" .) 0 }}
+            {{ if $team }}
+              <li>
+                <a class="link dim blue" href="/cex-static-html/teams/{{ $team.id }}/">{{ $team.name }}</a>
+              </li>
+            {{ else }}
+              <li><em>Unknown team ID: {{ . }}</em></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </article>
     {{ end }}
   </main>
 {{ end }}
