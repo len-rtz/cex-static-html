@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Application</title>
+  <title>Latest News</title>
   <!-- Pico CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
@@ -26,20 +26,34 @@
   </header>
 
   <main class="container">
-    <h1>Membership Application</h1>
-<form method="post" action="#">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
-<p><label for="email">Email:</label>
-<input type="email" id="email" name="email" required></p>
-<p><label for="team">Preferred Team:</label>
-<select id="team" name="team"></p>
-<p><option value="team-001">Cologne Kickers</option></p>
-<p><option value="team-002">Cologne Strikers</option></p>
-<p><option value="team-003">Cologne Runners</option></p>
-  </select>
-<p><button type="submit">Apply</button></p>
-</form>
+    <h1>Latest News</h1>
+<section class="grid">
+  <article>
+    <header>
+      <h3><a href="/news/2025-07-24-summer-break/">Suns out, training&#39;s off!</a></h3>
+      <p><small>Jul 24, 2025</small></p>
+    </header>
+    <p>
+<p>We're off into a little summer break! There will be no trainings til August 30!</p>
+<p></p>
+<footer>
+<a href="/news/2025-07-24-summer-break/" role="button" class="secondary">Read more</a>
+</footer></p>
+  </article>
+  <article>
+    <header>
+      <h3><a href="/news/2025-07-21-news-coach/">New Coach Announced</a></h3>
+      <p><small>Jul 21, 2025</small></p>
+    </header>
+    <p>
+<p>We're excited to welcome our new coach, Alex Müller, to the club! He brings years of experience...</p>
+<p></p>
+<footer>
+<a href="/news/2025-07-21-news-coach/" role="button" class="secondary">Read more</a>
+</footer></p>
+  </article>
+</section>
+<p><a href="/apply/" role="button">Join our community today!</a></p>
   </main>
 
   <footer class="container">
