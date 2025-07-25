@@ -1,7 +1,11 @@
 # Developer Experience (DevX) Coding Experiment
 This repository supports a coding experiment designed to evaluate **developer experience (DevX)** when building a real-world, ontology-driven website using two different static site generators: **Hugo** and **11ty**. The experiment explores how tool choice affects setup, workflow, community support, cognitive load, and overall usability.
 
-Two participants will implement the same use case — a sports club website built on a shared ontology over five sessions with a combined time limit of 20 hours each. All coding activities, reflections, and metrics are tracked through a structured developer diary and NASA-TLX surveys.
+Two participants implemented the same use case — a sports club website built on an ontology over five sessions with a combined time limit of 20 hours each. All coding activities, reflections, and metrics are tracked through a structured developer diary and NASA-TLX surveys.
+
+The individual deployments can be found in the following two repos + GitHub Pages:
+- [Hugo Sports Club](https://github.com/kishank11/cex-static-html)
+- [11ty Sports Club](https://github.com/len-rtz/cex-11ty)
 
 This project is done in the context of the masters course Coding Excellence (CEX) at TH Köln during summer semester 2025: [archi-lab.io](https://www.archi-lab.io)
 
