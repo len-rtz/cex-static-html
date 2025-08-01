@@ -70,6 +70,5 @@ Participants build a website based on a common ontology defining entities such a
 - Member
 - TrainingSession
 - Tournament
-- Result
 - NewsItem
 - MembershipApplication
